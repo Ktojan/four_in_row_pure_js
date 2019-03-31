@@ -21,18 +21,11 @@ class Board {
             }
 
             spaces.push(column);
-        }
-        console.log('SPACES\n');
-        console.log(spaces);
+        }        
         return spaces;
     }
 
     drawHTMLBoard() {
-        // this.spaces.forEach(column => {
-        //     for (let c = 0; c < this.column.length; c++) {
-        //         column[c].drawSVGSpace();
-        //     }
-        // });
         for (let column of this.spaces) {
             for (let space of column) {
                 space.drawSVGSpace();
